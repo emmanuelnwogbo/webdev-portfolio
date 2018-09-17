@@ -1,1 +1,261 @@
-.header {}
+.header {
+  position: relative;
+  height: 100vh;
+  padding: 0 3rem;
+  padding-top: 3rem;
+
+  &__nav {
+    position: absolute;
+    top: 3%;
+    right: 8%;
+    display: flex;
+    list-style: none;
+    z-index: 3000;
+  }
+
+  &__nav--item {
+    margin: 0 1rem;
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__nav--link,
+  &__nav--link:link,
+  &__nav--link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    color: #dfe6e9;
+    padding: 1.8rem 1.5rem;
+    display: inline-block;
+    transition: var(--sec-transition);
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 26%;
+      left: 0;
+      width: 5rem;
+      height: 1%;
+      background: #dfe6e9
+    }
+  }
+
+  &__nav--link:hover,
+  &__nav--link:active {
+    cursor: pointer;
+    transform: translateY(-.5rem);
+  }
+
+  &__nav--link:hover::before {}
+
+  &__container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 97%;
+      width: 41.6%;
+      transition: var(--prim-transition);
+      background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .5)), url(.././img/foldeddude.jpg);
+    }
+  }
+
+  &-1 {
+    position: relative;
+    background-image: linear-gradient(to right bottom, #2c3e50, rgba(#2c3e50, 0.8)), url(.././img/workstation.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 70%;
+    margin-right: .2rem;
+    z-index: 2000;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(#30336b, 0.7);
+    }
+  }
+
+  &__name {
+    position: absolute;
+    color: #dfe6e9;
+    top: 1%;
+    left: 10%;
+    cursor: pointer
+  }
+
+  &__title {
+    margin-top: 15rem;
+    display: inline-block;
+    transition: var(--prim-transition);
+    transform: translateX(31rem);
+    backface-visibility: hidden;
+    color: #dfe6e9;
+  }
+
+  &__title--2 {
+    display: block;
+    position: relative;
+    transform: translateX(8rem) translateY(-18rem);
+  }
+
+  &__title--para {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 21%;
+      left: 1.5%;
+      width: 75%;
+      height: 1%;
+      background: #dfe6e9;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    transform: translateY(-23.5rem);
+  }
+
+  &__socials--icon {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 4rem;
+    fill: #dfe6e9;
+    transition: var(--prim-transition);
+    cursor: pointer;
+    backface-visibility: hidden;
+  }
+
+  &__socials--icon:hover {
+    transform: translate(-.5rem) scale(1.1);
+  }
+
+  &__cvbtn {
+    transform: translateY(-17rem);
+  }
+
+  &__cvbtn--toggle {
+    position: absolute;
+    z-index: -1;
+    display: none;
+  }
+
+  &__cvbtn--toggle:checked~.header-2>.header-2__side--front::before {
+    height: 100%;
+  }
+
+  &__cvbtn--link,
+  &__cvbtn--link:link,
+  &__cvbtn--link:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #212121;
+    display: inline-block;
+    color: #dfe6e9;
+    text-align: center;
+    transform: translateX(38rem);
+    padding: .2rem 5rem;
+    position: relative;
+    z-index: 1000;
+    transition: var(--prim-transition);
+    box-shadow: var(--box-shadow);
+  }
+
+  &__cvbtn--link:hover {
+    transform: translateX(38rem) translateY(-1rem);
+    cursor: pointer;
+  }
+
+  &__cvbtn--link:active {
+    transform: translateX(38rem) translateY(.2rem) scale(.9);
+  }
+
+  &-2 {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 97%;
+    width: 50%;
+    z-index: 1000;
+
+    &--checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      //z-index: -1;
+      //display: none;
+    }
+
+    &--checkbox:checked~.header__container>.header-1>.header__title {
+      transform: translateX(5rem);
+    }
+
+    &--checkbox:checked~.header__container>&>&__side--front {
+      transform: rotateY(-180deg);
+    }
+
+    &--checkbox:checked~.header__container>&>&__side--back {
+      transform: rotateY(0);
+    }
+
+    &__side {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 3px;
+      overflow: hidden;
+      transition: var(--prim-transition);
+    }
+
+    &__side--front {
+      background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .5)), url(.././img/hikedude.jpg);
+      background-size: cover;
+      background-position: top;
+
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 0%;
+        transition: var(--prim-transition);
+        background: rgba(74, 27, 146, .5);
+      }
+    }
+
+    &__side--back {
+      background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .5)), url(.././img/foldeddude.jpg);
+      background-size: cover;
+      background-position: top;
+      transform: rotateY(180deg);
+      overflow: hidden;
+    }
+
+    &--about {
+      background: #f2f2f2;
+      width: 80%;
+      margin: 9rem auto;
+    }
+  }
+}
