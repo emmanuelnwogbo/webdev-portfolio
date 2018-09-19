@@ -3,6 +3,16 @@ body {
   font-weight: 400;
 }
 
+h2 {
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
 .header {
   &__nav--link {
     font-size: 1.4rem;
@@ -27,16 +37,6 @@ body {
   }
 
   &-2 {
-    &__title {
-      font-size: 4.5rem;
-      font-weight: 900;
-    }
-
-    &__sub {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
     &__para {
       font-size: 1.7rem;
       letter-spacing: .1rem;
@@ -54,5 +54,26 @@ body {
       font-size: 1.9rem;
       font-weight: 700;
     }
+  }
+}
+
+.services {
+  &--header {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+
+  &--sub {
+    font-weight: 400;
+  }
+
+  &__card--header {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__card--para {
+    font-size: 2rem;
+    font-weight: 400;
   }
 }
