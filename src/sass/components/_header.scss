@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 100vh;
+  height: 91.5rem;
   padding: 0 3rem;
   padding-top: 3rem;
 
@@ -26,7 +26,7 @@
     text-decoration: none;
     text-align: center;
     position: relative;
-    color: #dfe6e9;
+    color: var(--color-grey-white);
     padding: 1.8rem 1.5rem;
     display: inline-block;
     transition: var(--sec-transition);
@@ -34,11 +34,11 @@
     &::before {
       position: absolute;
       content: '';
-      bottom: 26%;
+      bottom: 29%;
       left: 0;
       width: 5rem;
       height: 1%;
-      background: #dfe6e9
+      background: var(--color-grey-white);
     }
   }
 
@@ -47,8 +47,6 @@
     cursor: pointer;
     transform: translateY(-.5rem);
   }
-
-  &__nav--link:hover::before {}
 
   &__container {
     position: relative;
@@ -90,7 +88,7 @@
 
   &__name {
     position: absolute;
-    color: #dfe6e9;
+    color: var(--color-grey-white);
     top: 1%;
     left: 10%;
     cursor: pointer
@@ -102,7 +100,7 @@
     transition: var(--prim-transition);
     transform: translateX(31rem);
     backface-visibility: hidden;
-    color: #dfe6e9;
+    color: var(--color-grey-white);
   }
 
   &__title--2 {
@@ -122,7 +120,7 @@
       left: 1.5%;
       width: 75%;
       height: 1%;
-      background: #dfe6e9;
+      background: var(--color-grey-white);
     }
   }
 
@@ -135,7 +133,7 @@
     height: 3rem;
     width: 3rem;
     margin-right: 4rem;
-    fill: #dfe6e9;
+    fill: var(--color-grey-white);
     transition: var(--prim-transition);
     cursor: pointer;
     backface-visibility: hidden;
@@ -143,46 +141,6 @@
 
   &__socials--icon:hover {
     transform: translate(-.5rem) scale(1.1);
-  }
-
-  &__cvbtn {
-    transform: translateY(-17rem);
-  }
-
-  &__cvbtn--toggle {
-    position: absolute;
-    z-index: -1;
-    display: none;
-  }
-
-  &__cvbtn--toggle:checked~.header-2>.header-2__side--front::before {
-    height: 100%;
-  }
-
-  &__cvbtn--link,
-  &__cvbtn--link:link,
-  &__cvbtn--link:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    background: #212121;
-    display: inline-block;
-    color: #dfe6e9;
-    text-align: center;
-    transform: translateX(38rem);
-    padding: .2rem 5rem;
-    position: relative;
-    z-index: 1000;
-    transition: var(--prim-transition);
-    box-shadow: var(--box-shadow);
-  }
-
-  &__cvbtn--link:hover {
-    transform: translateX(38rem) translateY(-1rem);
-    cursor: pointer;
-  }
-
-  &__cvbtn--link:active {
-    transform: translateX(38rem) translateY(.2rem) scale(.9);
   }
 
   &-2 {
@@ -211,6 +169,14 @@
 
     &--checkbox:checked~.header__container>&>&__side--back {
       transform: rotateY(0);
+    }
+
+    &--checkbox:checked~.header__container>&>&__side--back>&--about {
+      visibility: visible;
+    }
+
+    &--checkbox:checked~.header__container>&>&__side--back>&--about>&__btn {
+      opacity: 1;
     }
 
     &__side {
@@ -245,7 +211,7 @@
     }
 
     &__side--back {
-      background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .5)), url(.././img/foldeddude.jpg);
+      background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .7)), url(.././img/foldeddude.jpg);
       background-size: cover;
       background-position: top;
       transform: rotateY(180deg);
@@ -253,9 +219,96 @@
     }
 
     &--about {
-      background: #f2f2f2;
       width: 80%;
-      margin: 9rem auto;
+      margin: 13rem auto;
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--color-grey-white);
+      visibility: hidden;
+      transition: all 1.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    &__fig {
+      height: 15rem;
+      width: 15rem;
+      border-radius: 50%;
+      overflow: hidden;
+      border: solid var(--color-black);
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__sub {
+      text-align: center;
+      margin-bottom: 1rem
+    }
+
+    &__para {
+      text-align: left;
+      margin-bottom: 1rem;
+      display: inline-block;
+      align-self: flex-start;
+    }
+
+    &__email {
+      text-align: left;
+      align-self: flex-start;
+      margin-bottom: 1rem;
+      display: flex;
+    }
+
+    &__email--icon {
+      margin-right: 1rem;
+      transform: translateY(.3rem);
+    }
+
+    &__email--svg {
+      height: 2rem;
+      width: 2rem;
+      fill: var(--color-grey-white);
+    }
+
+    &__email--label {
+      margin-right: .8rem;
+    }
+
+    &__btn,
+    &__btn:link,
+    &__btn:visited {
+      align-self: flex-start;
+      background: var(--color-grey-white);
+      padding: .6rem 3.5rem;
+      border: none;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      color: var(--color-black);
+      display: inline-block;
+      transition: var(--sec-transition);
+      backface-visibility: hidden;
+      margin-top: 1rem;
+      box-shadow: var(--box-shadow);
+      opacity: 0;
+    }
+
+    &__btn:hover {
+      cursor: pointer;
+      transform: translateY(-.5rem)
+    }
+
+    &__btn:active {
+      transform: scale(.9);
     }
   }
 }
