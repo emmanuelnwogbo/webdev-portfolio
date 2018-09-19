@@ -1,0 +1,138 @@
+.blogs {
+  position: relative;
+  z-index: 1000;
+  background: var(--color-services);
+  padding: 3rem;
+
+  &__container {
+    position: relative;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6.5rem 0;
+    padding-bottom: 0rem;
+    margin: 0 auto;
+  }
+
+  &--header {
+    color: var(--color-black-2);
+  }
+
+  &--sub {
+    color: var(--color-black-2);
+    text-transform: uppercase;
+  }
+
+  &--slide {
+    overflow: hidden;
+    width: 100%;
+    transition: var(--prim-transition);
+  }
+
+  &--cards {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    padding: 1.7rem 0;
+    transition: var(--prim-transition);
+    transform: translateX(70rem);
+  }
+
+  &--card {
+    margin: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    flex-shrink: 0;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+  }
+
+  &__card--fig {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__card--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__card--text {
+    padding: 2rem;
+  }
+
+  &__card--header {
+    color: var(--color-black-2);
+    margin-bottom: 1rem;
+    line-height: 3.7rem;
+  }
+
+  &__card--para {
+    letter-spacing: 1px;
+    color: var(--color-blue);
+  }
+
+  &__card--bottom {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-top: 1rem;
+    color: var(--color-blue);
+  }
+
+  &__card--btn,
+  &__card--btn:link,
+  &__card--btn:visited {
+    background: var(--color-blue);
+    padding: 1rem 1.4rem;
+    margin-top: 1rem;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-grey-white);
+    display: inline-block;
+    transition: var(--prim-transition);
+    box-shadow: var(--box-shadow);
+  }
+
+  &__card--btn:hover {
+    cursor: pointer;
+    transform: translateY(-.5rem)
+  }
+
+  &__card--btn:active {
+    transform: scale(.9);
+  }
+
+  &__btn--more,
+  &__btn--more:link,
+  &__btn--more:visited {
+    background: var(--color-black-2);
+    padding: 1rem 3rem;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-grey-white);
+    display: inline-block;
+    transition: var(--prim-transition);
+    box-shadow: var(--box-shadow);
+    margin-top: 1.5rem;
+  }
+
+  &__btn--more:hover {
+    cursor: pointer;
+    transform: translateY(-.5rem)
+  }
+
+  &__btn--more:active {
+    transform: scale(.9);
+  }
+}

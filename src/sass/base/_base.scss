@@ -12,6 +12,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: var(--color-grey-white);
+  background: var(--color-services);
   line-height: 1.7;
+  overflow-x: hidden;
 }

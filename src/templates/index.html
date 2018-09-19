@@ -21,7 +21,7 @@
         <li class="header__nav--item"><a href="" class="header__nav--link">blog</a></li>
         <li class="header__nav--item"><a href="" class="header__nav--link">contact</a></li>
       </ul>
-      <input type="checkbox" class="header-2--checkbox">
+      <input type="checkbox" id="header--checkbox" class="header-2--checkbox">
       <div class="header__container">
         <div class="header-1">
           <h1 class="header__name">Jerry</h1>
@@ -89,7 +89,17 @@
                 </span>
                 <span class="header-2__email--label">Email:</span> jerrymaestro@gmail.com
               </p>
-              <a href="#" class="header-2__btn">my cv</a>
+              <div class="header-2--btns">
+                <a href="#" class="header-2__btn">my cv</a>
+                <a href="#" id="header-2--backbtn" class="header-2__backbtn">
+                  <span>
+                    <svg class="header-2--icon">
+                      <use xlink:href="../img/sprite.svg#icon-chevron-left"></use>
+                    </svg>
+                  </span>
+                  back
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -99,8 +109,8 @@
     <!--beginning of services section-->
     <div class="services">
       <div class="services__container">
-        <h2 class="services--header">Services</h2>
-        <h3 class="services--sub">Some Things I'm Really Good At</h3>
+        <h2 class="services--header section--header">Services</h2>
+        <h3 class="services--sub section--sub">Some Things I'm Really Good At</h3>
         <div class="services--cards">
           <div class="services--card">
             <span class=services__card--iconspan>
@@ -171,8 +181,117 @@
         </div>
       </div>
     </div>
+    <!--ending of services section-->
 
+    <div class="records">
+      <div class="records__container">
 
+      </div>
+    </div>
+
+    <!--beginning of blogs section-->
+    <div class="blogs">
+      <div class="blogs__container">
+        <h2 class="blogs--header section--header">Blogs</h2>
+        <h3 class="blogs--sub section--sub">A Few Of My Recent Blog Posts</h3>
+        <div class="blogs--slide">
+          <div class="blogs--cards">
+            <div class="blogs--card">
+              <figure class="blogs__card--fig">
+                <img src="../img/blog1.jpg" alt="" class="blogs__card--img">
+              </figure>
+              <div class="blogs__card--text">
+                <h4 class="blogs__card--header">What I Love About The Web 1</h4>
+                <p class="blogs__card--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur
+                  qui excepturi laudantium consectetur consequuntur, omnis eaque inventore deserunt!</p>
+                <span class="blogs__card--bottom">
+                  <a href="#" class="blogs__card--btn">Read More</a>
+                  <p class="blogs__card--date">1/April/2018</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="blogs--card">
+              <figure class="blogs__card--fig">
+                <img src="../img/blog2.jpg" alt="" class="blogs__card--img">
+              </figure>
+              <div class="blogs__card--text">
+                <h4 class="blogs__card--header">What I Love About UI Design</h4>
+                <p class="blogs__card--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur
+                  qui excepturi laudantium consectetur consequuntur, omnis eaque inventore deserunt!</p>
+                <span class="blogs__card--bottom">
+                  <a href="#" class="blogs__card--btn">Read More</a>
+                  <p class="blogs__card--date">1/April/2018</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="blogs--card">
+              <figure class="blogs__card--fig">
+                <img src="../img/blog3.jpg" alt="" class="blogs__card--img">
+              </figure>
+              <div class="blogs__card--text">
+                <h4 class="blogs__card--header">Thinking About Good UX</h4>
+                <p class="blogs__card--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur
+                  qui excepturi laudantium consectetur consequuntur, omnis eaque inventore deserunt!</p>
+                <span class="blogs__card--bottom">
+                  <a href="#" class="blogs__card--btn">Read More</a>
+                  <p class="blogs__card--date">1/April/2018</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="blogs--card">
+              <figure class="blogs__card--fig">
+                <img src="../img/blog3.jpg" alt="" class="blogs__card--img">
+              </figure>
+              <div class="blogs__card--text">
+                <h4 class="blogs__card--header">Thinking About Good UX</h4>
+                <p class="blogs__card--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur
+                  qui excepturi laudantium consectetur consequuntur, omnis eaque inventore deserunt!</p>
+                <span class="blogs__card--bottom">
+                  <a href="#" class="blogs__card--btn">Read More</a>
+                  <p class="blogs__card--date">1/April/2018</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="blogs--card">
+              <figure class="blogs__card--fig">
+                <img src="../img/blog3.jpg" alt="" class="blogs__card--img">
+              </figure>
+              <div class="blogs__card--text">
+                <h4 class="blogs__card--header">Thinking About Good UX</h4>
+                <p class="blogs__card--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur
+                  qui excepturi laudantium consectetur consequuntur, omnis eaque inventore deserunt!</p>
+                <span class="blogs__card--bottom">
+                  <a href="#" class="blogs__card--btn">Read More</a>
+                  <p class="blogs__card--date">1/April/2018</p>
+                </span>
+              </div>
+            </div>
+
+            <div class="blogs--card">
+              <figure class="blogs__card--fig">
+                <img src="../img/blog3.jpg" alt="" class="blogs__card--img">
+              </figure>
+              <div class="blogs__card--text">
+                <h4 class="blogs__card--header">Thinking About Good UX</h4>
+                <p class="blogs__card--para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam pariatur
+                  qui excepturi laudantium consectetur consequuntur, omnis eaque inventore deserunt!</p>
+                <span class="blogs__card--bottom">
+                  <a href="#" class="blogs__card--btn">Read More</a>
+                  <p class="blogs__card--date">1/April/2018</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="blogs__btn--more">view more</a>
+      </div>
+    </div>
+    <!--ending of blogs section-->
   </div>
 </body>
 
