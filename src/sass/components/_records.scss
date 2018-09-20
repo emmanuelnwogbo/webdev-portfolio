@@ -1,12 +1,16 @@
 .records {
   position: relative;
-  height: 40rem;
   padding: 0 3rem;
   padding-top: 3rem;
   background: var(--color-services);
+  color: var(--color-grey-white);
 
   &__container {
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 11rem 0;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to right bottom, #2c3e50, rgba(#2c3e50, 0.3)), url(.././img/workstation.jpg);
@@ -23,5 +27,20 @@
       width: 100%;
       background: rgba(#30336b, 0.7);
     }
+  }
+
+  &--item {
+    z-index: 4000;
+    text-align: center;
+  }
+
+  &--icon {
+    height: 8rem;
+    width: 8rem;
+    fill: var(--color-grey-white);
+  }
+
+  &--number {
+    margin-bottom: .2rem;
   }
 }
