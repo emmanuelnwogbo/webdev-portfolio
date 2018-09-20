@@ -11,7 +11,10 @@
 </head>
 
 <body>
-  <div class="container">
+  <input type="checkbox" id="overlay--control">
+  <div class="overlay" id="overlay"></div>
+  <div class="container" id="container">
+    <!--beginning of header section-->
     <header class="header">
       <ul class="header__nav">
         <li class="header__nav--item" id='header__about--link'><a href="" class="header__nav--link">about</a></li>
@@ -19,7 +22,7 @@
         <li class="header__nav--item"><a href="" class="header__nav--link">portfolio</a></li>
         <li class="header__nav--item"><a href="" class="header__nav--link">clients</a></li>
         <li class="header__nav--item"><a href="" class="header__nav--link">blog</a></li>
-        <li class="header__nav--item"><a href="" class="header__nav--link">contact</a></li>
+        <li class="header__nav--item" id='header__contact--link'><a href="" class="header__nav--link">contact</a></li>
       </ul>
       <input type="checkbox" id="header--checkbox" class="header-2--checkbox">
       <div class="header__container">
@@ -105,6 +108,7 @@
         </div>
       </div>
     </header>
+    <!--ending of header section-->
 
     <!--beginning of services section-->
     <div class="services">
@@ -182,7 +186,6 @@
       </div>
     </div>
     <!--ending of services section-->
-
 
     <!--beginning of records section-->
     <div class="records">
@@ -332,6 +335,22 @@
     </div>
     <!--ending of blogs section-->
   </div>
+
+  <!--beginning of contact section-->
+  <div class="contact" id="contact--section">
+    <div class="contact__container">
+      <h3 class="contact--header section--sub">Get In Touch</h3>
+      <form action="#" class="contact--form">
+        <input type="text" class="contact--input" id="contact--name" placeholder="Name" required>
+        <input type="email" class="contact--input contact--input-email" id="contact--email" placeholder="Email"
+          required>
+        <textarea type="text" class="contact--input contact--description" id="contact--description" rows="4"
+          placeholder="How may I help" required></textarea>
+        <button class="contact--btn">send</button>
+      </form>
+    </div>
+  </div>
+  <!--end of contact section-->
 </body>
 
 </html>
