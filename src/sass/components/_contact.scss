@@ -4,17 +4,36 @@
   left: 25%;
   z-index: 9200;
   background: var(--color-grey-white);
+  border-radius: .3rem;
   transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 50vw;
   padding: 2rem;
   transform: scale(0);
   backface-visibility: hidden;
 
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    z-index: 4000;
+    border-radius: 0 0 .3rem .3rem;
+    background-size: cover;
+    background-position: top;
+    background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .5)), url(.././img/foldeddude.jpg);
+  }
+
   &--header {
     margin-bottom: 1.5rem;
     text-align: center;
     color: var(--color-blue);
     font-weight: 700;
+  }
+
+  &--form {
+    z-index: 8000;
   }
 
   &--input {
@@ -76,9 +95,35 @@
     margin: 0;
 
     &::-webkit-input-placeholder {
-      font-weight: 700;
-      font-size: 1.6rem;
       font-family: inherit;
     }
+  }
+
+  &--addresses {
+    position: relative;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    z-index: 8000;
+  }
+
+  &--addresses-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &--addresses-listitem {
+    color: var(--color-grey-white);
+    text-align: center;
+  }
+
+  &--listitem-label {
+    display: block;
+  }
+
+  &--icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: var(--color-grey-white)
   }
 }

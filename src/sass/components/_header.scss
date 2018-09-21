@@ -8,14 +8,14 @@
   &__nav {
     position: absolute;
     top: 3%;
-    right: 8%;
+    right: 7%;
     display: flex;
     list-style: none;
     z-index: 3000;
   }
 
   &__nav--item {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     display: inline-block;
     text-align: center;
   }
@@ -149,9 +149,11 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 97%;
+    height: 98%;
     width: 50%;
     z-index: 1000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
     &--checkbox {
       position: absolute;
@@ -199,10 +201,12 @@
     }
 
     &__side--front {
-      background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .5)), url(.././img/hikedude.jpg);
+      background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .5)), url(.././img/compressedhike2.jpg);
       background-size: cover;
       background-position: top;
-
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transition: var(--prim-transition);
 
       &::before {
         content: '';
@@ -220,8 +224,11 @@
       background: linear-gradient(to right bottom, rgba(19, 20, 20, 1), rgba(19, 20, 20, .7)), url(.././img/foldeddude.jpg);
       background-size: cover;
       background-position: top;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
       transform: rotateY(180deg);
       overflow: hidden;
+      transition: var(--prim-transition);
     }
 
     &--about {

@@ -20,7 +20,6 @@
         <li class="header__nav--item" id='header__about--link'><a href="" class="header__nav--link">about</a></li>
         <li class="header__nav--item"><a href="" class="header__nav--link">services</a></li>
         <li class="header__nav--item"><a href="" class="header__nav--link">portfolio</a></li>
-        <li class="header__nav--item"><a href="" class="header__nav--link">clients</a></li>
         <li class="header__nav--item"><a href="" class="header__nav--link">blog</a></li>
         <li class="header__nav--item" id='header__contact--link'><a href="" class="header__nav--link">contact</a></li>
       </ul>
@@ -133,7 +132,7 @@
                 <use xlink:href="../img/sprite.svg#icon-brush"></use>
               </svg>
             </span>
-            <h4 class="services__card--header">web development</h4>
+            <h4 class="services__card--header">web design</h4>
             <p class="services__card--para">
               Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.
             </p>
@@ -144,7 +143,7 @@
                 <use xlink:href="../img/sprite.svg#icon-database1"></use>
               </svg>
             </span>
-            <h4 class="services__card--header">web development</h4>
+            <h4 class="services__card--header">database administration</h4>
             <p class="services__card--para">
               Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.
             </p>
@@ -155,7 +154,7 @@
                 <use xlink:href="../img/sprite.svg#icon-camera"></use>
               </svg>
             </span>
-            <h4 class="services__card--header">web development</h4>
+            <h4 class="services__card--header">photoshop</h4>
             <p class="services__card--para">
               Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.
             </p>
@@ -166,7 +165,7 @@
                 <use xlink:href="../img/sprite.svg#icon-film"></use>
               </svg>
             </span>
-            <h4 class="services__card--header">web development</h4>
+            <h4 class="services__card--header">video editing</h4>
             <p class="services__card--para">
               Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.
             </p>
@@ -177,7 +176,7 @@
                 <use xlink:href="../img/sprite.svg#icon-images"></use>
               </svg>
             </span>
-            <h4 class="services__card--header">web development</h4>
+            <h4 class="services__card--header">photography</h4>
             <p class="services__card--para">
               Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.
             </p>
@@ -206,7 +205,7 @@
         </span>
         <span class="records--item">
           <svg class="records--icon">
-            <use xlink:href="../img/sprite.svg#icon-flash"></use>
+            <use xlink:href="../img/sprite.svg#icon-thumbs-up"></use>
           </svg>
           <p class="records--number">37</p>
           <p class="records--caption">Projects Completed</p>
@@ -221,6 +220,72 @@
       </div>
     </div>
     <!--end of records section-->
+
+    <!--beginning of portfolio section-->
+    <div class="portfolio">
+      <div class="portfolio__container">
+        portfolio
+      </div>
+    </div>
+    <!--ending of portfolio section-->
+
+    <!--beginning of clients section-->
+    <div class="clients">
+      <div class="clients--container">
+        <div class="clients--slider-parent">
+          <div class="clients--slider">
+            <div class="clients--card">
+              <figure class="clients--fig"><img src="../img/avtar1.jpg" alt="" class="clients--img"></figure>
+              <p class="clients--name">Jack Done</p>
+              <p class="clients--job">Web Designer</p>
+              <p class="clients--review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A est quibusdam voluptas, quae iste corporis
+                vel
+                provident, nostrum adipisci soluta molestias sed, enim quod quaerat. Iure, eius? Commodi, sit ducimus.
+              </p>
+            </div>
+            <div class="clients--card">
+              <figure class="clients--fig"><img src="../img/avtar1.jpg" alt="" class="clients--img"></figure>
+              <p class="clients--name">Jack Dorsey</p>
+              <p class="clients--job">Web Designer</p>
+              <p class="clients--review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A est quibusdam voluptas, quae iste corporis
+                vel
+                provident, nostrum adipisci soluta molestias sed, enim quod quaerat. Iure, eius? Commodi, sit ducimus.
+              </p>
+            </div>
+            <div class="clients--card">
+              <figure class="clients--fig"><img src="../img/avtar1.jpg" alt="" class="clients--img"></figure>
+              <p class="clients--name">Jack Dorsey</p>
+              <p class="clients--job">Web Designer</p>
+              <p class="clients--review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A est quibusdam voluptas, quae iste corporis
+                vel
+                provident, nostrum adipisci soluta molestias sed, enim quod quaerat. Iure, eius? Commodi, sit ducimus.
+              </p>
+            </div>
+            <div class="clients--card">
+              <figure class="clients--fig"><img src="../img/avtar1.jpg" alt="" class="clients--img"></figure>
+              <p class="clients--name">Jack Dorsey last</p>
+              <p class="clients--job">Web Designer</p>
+              <p class="clients--review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A est quibusdam voluptas, quae iste corporis
+                vel
+                provident, nostrum adipisci soluta molestias sed, enim quod quaerat. Iure, eius? Commodi, sit ducimus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="clients--nav">
+          <ul class="clients--nav-list">
+            <li class="clients--nav-listitem"></li>
+            <li class="clients--nav-listitem"></li>
+            <li class="clients--nav-listitem"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--ending of clients section-->
 
     <!--beginning of blogs section-->
     <div class="blogs">
@@ -346,8 +411,36 @@
           required>
         <textarea type="text" class="contact--input contact--description" id="contact--description" rows="4"
           placeholder="How may I help" required></textarea>
-        <button class="contact--btn">send</button>
+        <button class="contact--btn">send message</button>
       </form>
+    </div>
+    <div class="contact--addresses">
+      <ul class="contact--addresses-list">
+        <li class="contact--addresses-listitem">
+          <span class="contact--listitem-label">
+            <svg class="contact--icon">
+              <use xlink:href="../img/sprite.svg#icon-mobile"></use>
+            </svg>
+          </span>
+          <span class="contact--listitem-detail">(+1) 123 456 7890</span>
+        </li>
+        <li class="contact--addresses-listitem">
+          <span class="contact--listitem-label">
+            <svg class="contact--icon">
+              <use xlink:href="../img/sprite.svg#icon-mail"></use>
+            </svg>
+          </span>
+          <span class="contact--listitem-detail">jerrymaestro@gmail.com</span>
+        </li>
+        <li class="contact--addresses-listitem">
+          <span class="contact--listitem-label">
+            <svg class="contact--icon">
+              <use xlink:href="../img/sprite.svg#icon-address-book"></use>
+            </svg>
+          </span>
+          <span class="contact--listitem-detail">Gotham Avenue, Resort</span>
+        </li>
+      </ul>
     </div>
   </div>
   <!--end of contact section-->

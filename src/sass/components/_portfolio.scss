@@ -1,0 +1,10 @@
+.portfolio {
+  position: relative;
+  padding: 0 3rem;
+  padding-top: 3rem;
+  color: var(--color-grey-white);
+
+  &__container {
+    background: green;
+  }
+}

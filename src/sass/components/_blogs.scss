@@ -184,8 +184,9 @@
     width: 80%;
     color: var(--color-black);
     padding: 1.5rem 2rem;
-    border-radius: 3rem 0 0 3rem;
-    background-color: var(--color-grey-white, .5);
+    padding-right: 16rem;
+    border-radius: 3rem;
+    background-color: var(--color-grey-white, 0.5);
     backface-visibility: hidden;
     border: none;
     transition: var(--prim-transition);
@@ -224,15 +225,16 @@
   &--btn:link,
   &--btn:visited {
     text-transform: uppercase;
-    padding: 2.1rem 2rem;
+    padding: 2.2rem;
     width: 9.8%;
-    transform: translateX(-.3rem) translateY(-.2rem);
+    transition: var(--prim-transition);
+    transform: translateX(-14.9rem) translateY(-.2rem);
     height: 100%;
     border: none;
     background: var(--color-blog-btns);
     color: var(--color-grey-white);
-    border-radius: 0 3rem 3rem 0;
-    box-shadow: var(--box-shadow);
+    border-radius: 3rem;
+    box-shadow: var(--box-shadow)
   }
 
   &--btn:hover {
@@ -241,7 +243,7 @@
   }
 
   &--btn:active {
-    transform: translateX(-.3rem) translateY(-.2rem);
+    transform: translateX(-14.9rem) translateY(-.2rem) scale(.9);
     outline: var(--color-blog-btns)
   }
 }

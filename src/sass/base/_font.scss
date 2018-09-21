@@ -95,6 +95,23 @@ h3 {
   }
 }
 
+.clients {
+  &--name {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  &--job {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  &--review {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
 .blogs {
   &__card--header {
     font-size: 2.4rem;
@@ -165,5 +182,10 @@ h3 {
       font-size: 1.6rem;
       font-family: inherit;
     }
+  }
+
+  &--addresses-listitem {
+    font-size: 1.6rem;
+    font-weight: 900;
   }
 }
