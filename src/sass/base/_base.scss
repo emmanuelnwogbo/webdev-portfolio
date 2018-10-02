@@ -8,6 +8,48 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+
+  @media screen and (max-width: 112.25em) {
+    font-size: 60%;
+  }
+
+  @media screen and (max-width: 1768px) {
+    font-size: 50%;
+  }
+
+
+  @media screen and (max-width: 1470px) {
+    font-size: 40.5%;
+  }
+
+  @media screen and (max-width: 1194px) {
+    font-size: 30%;
+  }
+
+  @media screen and (max-width: 884px) {
+    font-size: 25%;
+  }
+
+  @media screen and (max-width: 735px) {
+    font-size: 22%;
+  }
+
+  @media screen and (max-width: 642px) {
+    font-size: 18%;
+  }
+
+  @media screen and (max-width: 436px) {
+    font-size: 15.6%;
+  }
+
+  @media screen and (max-width: 367px) {
+    font-size: 12%;
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 60%;
+  }
 }
 
 body {
@@ -29,6 +71,12 @@ body {
   transition: var(--prim-transition);
   z-index: -1;
   opacity: 0;
+
+  @media screen and (max-width: 900px) {}
+
+  @media screen and(max-width: 800px) {}
+
+  @media screen and (min-width: 1000px) {}
 }
 
 #overlay--control {

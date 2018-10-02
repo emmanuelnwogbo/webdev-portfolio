@@ -3,6 +3,7 @@
   z-index: 1000;
   background: var(--color-services);
   padding: 3rem;
+  display: none;
 
   &__container {
     position: relative;
@@ -49,7 +50,7 @@
     flex-basis: 30%;
     flex-shrink: 0;
     align-items: center;
-    box-shadow: var(--box-shadow);
+    background: #fff;
   }
 
   &__card--fig {
@@ -191,6 +192,7 @@
     border: none;
     transition: var(--prim-transition);
     border-bottom: 2px solid transparent;
+    transform: translateX(6rem);
 
     &:focus {
       outline: none;
@@ -210,7 +212,7 @@
   &--label {
     position: absolute;
     top: 100%;
-    left: 6.3%;
+    left: 10%;
     transition: var(--prim-transition);
     color: var(--color-grey-white);
   }
@@ -228,22 +230,20 @@
     padding: 2.2rem;
     width: 9.8%;
     transition: var(--prim-transition);
-    transform: translateX(-14.9rem) translateY(-.2rem);
+    transform: translateX(-6rem) translateY(-0.2rem);
     height: 100%;
     border: none;
     background: var(--color-blog-btns);
     color: var(--color-grey-white);
     border-radius: 3rem;
-    box-shadow: var(--box-shadow)
   }
 
   &--btn:hover {
     cursor: pointer;
-    background: rgba(#2c3e50, .9);
+    background: var(--color-blue);
   }
 
   &--btn:active {
-    transform: translateX(-14.9rem) translateY(-.2rem) scale(.9);
     outline: var(--color-blog-btns)
   }
 }

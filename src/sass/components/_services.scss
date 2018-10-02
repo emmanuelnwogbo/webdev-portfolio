@@ -40,6 +40,12 @@
     flex-direction: column;
     flex-basis: 30%;
     align-items: center;
+    background: #fff;
+    padding: 3.5rem;
+
+    @media screen and (max-width: 642px) {
+      flex-basis: 92%;
+    }
   }
 
   &__card--iconspan {

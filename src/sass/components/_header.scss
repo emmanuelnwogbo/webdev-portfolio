@@ -11,7 +11,7 @@
     right: 7%;
     display: flex;
     list-style: none;
-    z-index: 3000;
+    z-index: 9900;
   }
 
   &__nav--item {
@@ -97,30 +97,35 @@
   }
 
   &__title {
-    margin-top: 15rem;
-    display: inline-block;
+    margin-top: 19rem;
     transition: var(--prim-transition);
-    transform: translateX(31rem);
+    transform: translateX(20rem);
     backface-visibility: hidden;
     color: var(--color-grey-white);
+    min-width: 150%;
   }
 
   &__title--2 {
     display: block;
     position: relative;
-    transform: translateX(8rem) translateY(-18rem);
+    transform: translateX(9rem) translateY(-8.5rem);
+    backface-visibility: hidden;
+
+    @media screen and (max-width: 522px) {
+      transform: translateX(9rem) translateY(-6.8rem);
+    }
   }
 
   &__title--para {
     position: relative;
-    display: inline-block;
+    backface-visibility: hidden;
 
     &::before {
       position: absolute;
       content: '';
-      bottom: 21%;
-      left: 1.5%;
-      width: 75%;
+      bottom: 16%;
+      left: 3%;
+      width: 30%;
       height: 1%;
       background: var(--color-grey-white);
     }
@@ -128,13 +133,17 @@
 
   &__socials {
     display: flex;
-    transform: translateY(-23.5rem);
+    transform: translateY(-14rem) translateX(5.5rem);
+
+    @media screen and (max-width: 522px) {
+      transform: translateY(-10rem) translateX(5.5rem);
+    }
   }
 
   &__socials--icon {
-    height: 3rem;
-    width: 3rem;
-    margin-right: 4rem;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 3rem;
     fill: var(--color-grey-white);
     transition: var(--prim-transition);
     cursor: pointer;
@@ -161,6 +170,10 @@
       left: 0;
       z-index: -1;
       display: none;
+    }
+
+    &--checkbox:checked~.header__container>.header-2 {
+      z-index: 7000;
     }
 
     &--checkbox:checked~.header__container>.header-1>.header__title {
@@ -248,7 +261,6 @@
       width: 15rem;
       border-radius: 50%;
       overflow: hidden;
-      border: solid var(--color-black);
     }
 
     &__img {

@@ -17,6 +17,10 @@ h3 {
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: 1px;
+
+  @media screen and (max-width: 642px) {
+    font-size: 4rem
+  }
 }
 
 .section--sub {
@@ -31,13 +35,26 @@ h3 {
   }
 
   &__name {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     font-weight: 700;
   }
 
   &__title {
     font-weight: 900;
-    font-size: 18.5rem;
+    font-size: 12rem;
+
+    @media screen and (max-width: 522px) {
+      font-size: 9rem;
+    }
+  }
+
+  &__title--1 {
+    font-size: 10rem;
+    backface-visibility: hidden;
+
+    @media screen and (max-width: 522px) {
+      font-size: 7rem;
+    }
   }
 
   &__cvbtn--link,
@@ -79,11 +96,19 @@ h3 {
   &__card--header {
     font-size: 2rem;
     font-weight: 700;
+
+    @media screen and (max-width: 642px) {
+      font-size: 3rem;
+    }
   }
 
   &__card--para {
     font-size: 2rem;
     font-weight: 400;
+
+    @media screen and (max-width: 642px) {
+      font-size: 3.5rem
+    }
   }
 }
 
@@ -99,22 +124,34 @@ h3 {
   &--name {
     font-size: 3rem;
     font-weight: 700;
+
+    @media screen and (max-width: 642px) {
+      font-size: 5rem;
+    }
   }
 
   &--job {
     font-size: 1.5rem;
     font-weight: 400;
+
+    @media screen and (max-width: 642px) {
+      font-size: 2.5rem
+    }
   }
 
   &--review {
     font-size: 2rem;
     font-weight: 400;
+
+    @media screen and (max-width: 642px) {
+      font-size: 2.8rem;
+    }
   }
 }
 
 .blogs {
   &__card--header {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 700;
   }
 
@@ -166,6 +203,7 @@ h3 {
 .contact {
   &--input {
     font-size: 1.5rem;
+    font-weight: 700;
 
     &::-webkit-input-placeholder {
       font-weight: 700;
@@ -176,6 +214,7 @@ h3 {
 
   &--description {
     font-size: 2rem;
+    font-weight: 700;
 
     &::-webkit-input-placeholder {
       font-weight: 700;
@@ -187,5 +226,10 @@ h3 {
   &--addresses-listitem {
     font-size: 1.6rem;
     font-weight: 900;
+  }
+
+  &--btn {
+    font-size: 1.2rem;
+    font-weight: 700
   }
 }
